@@ -138,7 +138,8 @@ train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size,
 test_dataset = torch.utils.data.TensorDataset(X_test, y_test)
 test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
-num_epochs = 50
+#num_epochs = 50
+num_epochs = 10
 train_hist =[]
 test_hist =[]
 # Training loop
@@ -246,4 +247,4 @@ plt.ylabel('Value')
 plt.legend()
 plt.title('Time Series Forecasting')
 plt.grid(True)
-
+plt.show()
